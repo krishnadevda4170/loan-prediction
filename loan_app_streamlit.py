@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 # Load the model
-with open('model\\loan_prediction.pkl', 'rb') as file:
+with open('model/loan_prediction.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Streamlit UI
