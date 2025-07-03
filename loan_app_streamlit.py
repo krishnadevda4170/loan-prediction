@@ -2,12 +2,9 @@ import streamlit as st
 import numpy as np
 import pickle
 
-try:
-    with open('model/loan_prediction.pkl', 'rb') as file:
-        model = pickle.load(file)
-except Exception as e:
-    st.error(f"🚨 Error loading model: {e}")
-    st.stop()
+# Load the model
+with open(r'C:\Users\krishna devda\OneDrive\Desktop\Loan_prediction_model\model\loan_prediction.pkl', 'rb') as file:
+    model = pickle.load(file)
 
 # Streamlit UI
 st.set_page_config(page_title="Loan Prediction", layout="centered")
